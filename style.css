@@ -12,6 +12,7 @@ body, html {
     align-items: center;
     justify-content: space-between;
     font-family: Arial, sans-serif;
+    color: #FF84A8;
 }
 
 header {
@@ -22,10 +23,20 @@ header {
     padding: 20px;
 }
 
-.logo, .menu-icon {
-    font-size: 24px;
+.menu-icon {
+    font-size: 36px;
     font-weight: bold;
 }
+
+.logo {
+    background: url('./assets/images/logo_trasparente_ritagliato.png') no-repeat center center;
+    background-size: contain; 
+    width: 150px;
+    height: 150px;
+    display: block;
+    background-position: left;
+}
+
 
 main {
     display: flex;
@@ -49,13 +60,45 @@ footer {
 	width: 0;
 	height: 0;
 	border-top: 150px solid transparent;
-	border-right: 150px solid #000;
+	border-right: 150px solid #FF84A8;
     margin-left: auto;
 }
 
 .arrow {
-    width: 50px; /* Adjust width as necessary */
-    height: auto;
-    background: url('arrow.png') no-repeat center center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    background: url('./assets/images/items/arrow.png') no-repeat center center;
     background-size: contain;
+}
+
+
+
+
+
+#nav-bar.hidden {
+    width: 0;
+  }
+
+  #nav-bar.visible {
+    width: 250px;
+  }
+
+  #nav-bar {
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+  }
+
+  .body-dark-overlay {
+    filter: brightness(50%);
 }
