@@ -26,7 +26,6 @@ document.getElementById('navbar').addEventListener('click', function () {
 });
 
 
-
 document.addEventListener('click', function (event) {
     var overlay = document.querySelector('.body-dark-overlay');
     var navBar = document.getElementById('nav-bar');

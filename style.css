@@ -59,10 +59,10 @@ main {
 }
 
 footer {
-	width: 0;
-	height: 0;
-	border-top: 150px solid transparent;
-	border-right: 150px solid #FF84A8;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 150px solid #FF84A8;
     margin-left: auto;
 }
 
@@ -77,14 +77,12 @@ footer {
 }
 
 
-
-
 #nav-bar.hidden {
     width: 0;
 }
 
 #nav-bar.visible {
-    flex:1;
+    flex: 1;
     width: 350px;
     padding: 20px;
     border-radius: 25px 0px 0px 25px;
@@ -107,7 +105,6 @@ footer {
     color: white;
     z-index: 1000; /* Assicurati che il nav-bar sia sopra l'overlay */
 }
-
 
 
 .body-dark-overlay {
@@ -133,9 +130,6 @@ footer {
 }
 
 
-
-
-
 .navbar-header {
     display: inline-flex;
     flex-direction: row;
@@ -144,7 +138,6 @@ footer {
     align-items: center;
     padding: 20px;
 }
-
 
 
 .navbar-links a {
