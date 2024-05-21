@@ -147,8 +147,9 @@ footer {
 
 
 
-a {
+.navbar-links a {
     text-decoration: none;
+    text-align: left;
     color: #FF84A8;
     font-size: 30px;
     font-weight: 600;
@@ -158,7 +159,6 @@ a {
 .navbar-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
