@@ -88,6 +88,8 @@ footer {
     width: 350px;
     padding: 20px;
     border-radius: 25px 0px 0px 25px;
+
+
 }
 
 #nav-bar {
@@ -161,11 +163,11 @@ a {
 }
 
 .navbar-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
+
+
     padding: 20px;
+    flex: 1;
+    align-content: flex-end;
 }
 
 .navbar-footer p {
@@ -174,4 +176,10 @@ a {
     margin: 10px;
     color: #FF84A8;
     text-align: center;
+}
+
+.nav-bar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
