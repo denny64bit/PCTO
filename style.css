@@ -187,34 +187,35 @@ footer {
     justify-content: center;
 }
 
-/* Specific section styles */
-.intro {
-
-}
-
 .intro img {
     width: 200px;
     height: auto;
     margin-bottom: 20px;
 }
 
-.method, .philosophy, .works, .intro, .math-science, .legacy {
+.method, .philosophy, .works, .intro, .math-science, .legacy, .technical-challenges, .benefits, .economic-challenges, .conclusion  {
     text-align: left;
     max-width: 800px;
     margin: 20px;
     align-self: flex-start;
 }
 
-.intro h2, .method h2, .philosophy h2, .works h2, .math-science h2, .legacy h2 {
+.intro h2, .method h2, .philosophy h2, .works h2, .math-science h2, .legacy h2, .technical-challenges h2, .benefits h2, .economic-challenges h2, .conclusion h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.intro p, .method p, .philosophy p, .works p, .math-science p, .legacy p {
+.intro p, .method p, .philosophy p, .works p, .math-science p, .legacy p, .technical-challenges p, .benefits p, .economic-challenges p, .conclusion p {
     font-size: 1em;
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
+.technical-challenges h3, .benefits h3, .economic-challenges h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 
 .works ul {
     list-style: none;
@@ -236,3 +237,8 @@ footer {
     display: flex;
     width: 100%;
 }
+
+
+
+
+
