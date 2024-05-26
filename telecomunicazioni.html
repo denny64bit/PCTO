@@ -5,6 +5,28 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>PCTO - Telecomunicazioni</title>
     <link href="style.css" rel="stylesheet">
+    <style>
+
+        .intro {
+            display: flex;
+            flex-direction: row;
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .intro img {
+                margin-top: 20px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -22,7 +44,7 @@
         <p>Il padre del microchip</p>
 
         <section class="intro">
-            <img alt="Federico Faggin" src="draft/material/federico_faggin_whiteblack.png">
+
             <div>
                 <h2>Biografia</h2>
                 <p>Federico Faggin è un ingegnere e imprenditore italiano nato il 1º dicembre 1941 a Vicenza, Italia,
@@ -52,6 +74,7 @@
                     dell’informatica, ma anche un esempio di come la passione, la determinazione e la creatività possano
                     influenzare in modo duraturo il mondo che ci circonda.</p>
             </div>
+            <img alt="Federico Faggin" src="draft/material/federico_faggin_whiteblack.png">
         </section>
 
         <section class="legacy">

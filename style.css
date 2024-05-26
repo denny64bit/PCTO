@@ -191,6 +191,7 @@ footer {
     width: 200px;
     height: auto;
     margin-bottom: 20px;
+    height: fit-content;
 }
 
 .method, .philosophy, .works, .intro, .math-science, .legacy, .technical-challenges, .benefits, .economic-challenges, .conclusion {
