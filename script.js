@@ -65,16 +65,40 @@ var wave1 = $('#feel-the-wave').wavify({
 });
 
 
+// Funzione per impostare il tema in base allo stato memorizzato
+function setTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const themeStyle = document.getElementById('theme-style');
+    if (savedTheme === 'dark') {
+        themeStyle.setAttribute('href', 'style-darkmode.css');
+        document.body.classList.add('dark-theme');
+    } else {
+        themeStyle.setAttribute('href', 'style.css');
+        document.body.classList.remove('dark-theme');
+    }
+}
+
+// Funzione per salvare lo stato del tema quando viene cambiato
+function saveTheme(theme) {
+    localStorage.setItem('theme', theme);
+}
+
+// Funzione per attivare/disattivare il tema
 function toggleTheme() {
     const themeStyle = document.getElementById('theme-style');
     if (themeStyle.getAttribute('href') === 'style.css') {
         themeStyle.setAttribute('href', 'style-darkmode.css');
         document.body.classList.add('dark-theme');
+        saveTheme('dark');
     } else {
         themeStyle.setAttribute('href', 'style.css');
-        document.body.classList.remove('style-darkmode');
+        document.body.classList.remove('dark-theme');
+        saveTheme('light');
     }
 }
+
+// Imposta il tema al caricamento della pagina
+setTheme();
 
 
 
