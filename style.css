@@ -181,7 +181,7 @@ footer {
     font-size: 0.8em;
     display: flex;
     margin: 20px;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -238,6 +238,37 @@ footer {
     width: 100%;
 }
 
+
+
+.bio, .important-dates, .stats-awards, .competitions, .charity, .professional-vs-school, .admiration, .legacy {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px;
+    align-self: flex-start;
+}
+
+.bio h2, .important-dates h3, .stats-awards h3, .competitions h3, .charity h3, .professional-vs-school h3, .admiration h3, .legacy h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.bio p, .important-dates ul, .stats-awards ul, .competitions ul, .charity p, .professional-vs-school p, .admiration p, .legacy p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.important-dates ul, .stats-awards ul, .competitions ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.important-dates ul li, .stats-awards ul li, .competitions ul li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
 
 
 
