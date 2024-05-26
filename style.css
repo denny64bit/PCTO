@@ -193,7 +193,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.method, .philosophy, .works, .intro, .math-science, .legacy, .technical-challenges, .benefits, .economic-challenges, .conclusion  {
+.method, .philosophy, .works, .intro, .math-science, .legacy, .technical-challenges, .benefits, .economic-challenges, .conclusion {
     text-align: left;
     max-width: 800px;
     margin: 20px;
@@ -237,7 +237,6 @@ footer {
     display: flex;
     width: 100%;
 }
-
 
 
 .bio, .important-dates, .stats-awards, .competitions, .charity, .professional-vs-school, .admiration, .legacy {
