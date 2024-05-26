@@ -63,9 +63,19 @@ var wave1 = $('#feel-the-wave').wavify({
     color: '#FF84A8',
     speed: .15
 });
-  
 
-    
+
+function toggleTheme() {
+    const themeStyle = document.getElementById('theme-style');
+    if (themeStyle.getAttribute('href') === 'style.css') {
+        themeStyle.setAttribute('href', 'style-darkmode.css');
+        document.body.classList.add('dark-theme');
+    } else {
+        themeStyle.setAttribute('href', 'style.css');
+        document.body.classList.remove('style-darkmode');
+    }
+}
+
 
 
   

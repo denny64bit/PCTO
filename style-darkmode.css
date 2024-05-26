@@ -1,0 +1,274 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    color: #FFF; /* Cambio del colore del testo per la dark mode */
+    background-color: #222; /* Cambio del colore di sfondo per la dark mode */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 90%;
+    padding: 20px;
+    background-color: #222; /* Cambio del colore di sfondo per la dark mode */
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    color: #FF84A8;
+}
+
+.logo {
+    background: url('./assets/images/logo_trasparente_ritagliato.png') no-repeat center center;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    display: block;
+    background-position: left;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+.names {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Footer styles */
+footer {
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 150px solid #FF84A8;
+    margin-left: auto;
+}
+
+/* Arrow styles */
+.arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    background: url('./assets/images/items/arrow.png') no-repeat center center;
+    background-size: contain;
+}
+
+/* Navigation bar styles */
+#nav-bar.hidden {
+    width: 0;
+}
+
+#nav-bar.visible {
+    flex: 1;
+    width: 350px;
+    padding: 20px;
+    border-radius: 25px 0 0 25px;
+}
+
+#nav-bar {
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #444; /* Cambio del colore di sfondo per la dark mode */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    color: white;
+    z-index: 1000;
+}
+
+/* Overlay styles */
+.body-dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.body-dark-overlay.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.body-dark-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Navigation bar content styles */
+.navbar-header {
+    display: inline-flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    text-align: left;
+    color: #FF84A8;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-footer {
+    padding: 20px;
+    flex: 1;
+    align-content: flex-end;
+}
+
+.navbar-footer p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+    color: #FF84A8;
+    text-align: center;
+}
+
+.nav-bar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Card styles */
+.card {
+    font-size: 0.8em;
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+
+.method, .philosophy, .works, .intro, .math-science, .legacy, .technical-challenges, .benefits, .economic-challenges, .conclusion {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px;
+    align-self: flex-start;
+}
+
+.intro h2, .method h2, .philosophy h2, .works h2, .math-science h2, .legacy h2, .technical-challenges h2, .benefits h2, .economic-challenges h2, .conclusion h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p, .method p, .philosophy p, .works p, .math-science p, .legacy p, .technical-challenges p, .benefits p, .economic-challenges p, .conclusion p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.technical-challenges h3, .benefits h3, .economic-challenges h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+.works ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.works ul li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.wave {
+    z-index: 1;
+}
+
+.footer-wave {
+    display: flex;
+    width: 100%;
+}
+
+
+.bio, .important-dates, .stats-awards, .competitions, .charity, .professional-vs-school, .admiration, .legacy {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px;
+    align-self: flex-start;
+}
+
+.bio h2, .important-dates h3, .stats-awards h3, .competitions h3, .charity h3, .professional-vs-school h3, .admiration h3, .legacy h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.bio p, .important-dates ul, .stats-awards ul, .competitions ul, .charity p, .professional-vs-school p, .admiration p, .legacy p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.important-dates ul, .stats-awards ul, .competitions ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.important-dates ul li, .stats-awards ul li, .competitions ul li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
