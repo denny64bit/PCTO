@@ -54,3 +54,21 @@ document.getElementById('close-navbar').addEventListener('click', function () {
     openMenuIcon.classList.remove('hidden');
     openMenuIcon.classList.add('visible');
 });
+
+
+
+
+
+var wave1 = $('#feel-the-wave').wavify({
+    height: 50,
+    bones: 4,
+    amplitude: 60,
+    color: '#FF84A8',
+    speed: .15
+  });
+  
+
+    
+
+
+  
