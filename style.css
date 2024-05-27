@@ -270,7 +270,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Stili per il pulsante Toggle Theme */
+/* Pulsante cambia tema */
 .toggle-theme-btn {
     background-color: #FF84A8;
     border: none;
@@ -292,6 +292,3 @@ footer {
     background-color: #c6557a;
     transform: scale(0.95);
 }
-
-
-
