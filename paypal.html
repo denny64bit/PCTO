@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PCTO - Matematica</title>
+    <link href="style.css" rel="stylesheet" id="theme-style">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Disables scrolling for the entire page */
+        }
+        #container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Ensures no scrolling within the container */
+        }
+        object {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="./index.html">
+        <div class="logo"></div>
+    </a>
+    <div class="menu-icon" id="navbar">☰</div>
+</header>
+
+
+<div id="container">
+    <object data="./paypalPcto/paypal.html" type="text/html"></object>
+</div>
+
+<div class="footer-wave">
+    <svg class="wave" height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+        <path d="" id="feel-the-wave"/>
+    </svg>
+</div>
+
+
+<div class="hidden" id="nav-bar">
+    <div class="nav-bar-content">
+        <div class="navbar-header">
+            <a href="./index.html">
+                <div class="logo"></div>
+            </a>
+            <div class="menu-icon" id="close-navbar">×</div>
+        </div>
+        <div class="navbar-links">
+            <a href="./matematica.html">Matematica</a>
+            <a>Inglese</a>
+            <a class="dropdown" href="hyperloop.html">• Hyperloop</a>
+            <a class="dropdown" href="#">• PayPal</a>
+            <a href="./telecomunicazioni.html">Telecomunicazioni</a>
+            <a href="./scienze-motorie.html">Scienze Motorie</a>
+        </div>
+
+        <button onclick="toggleTheme()">Toggle Theme</button>
+
+        <div class="navbar-footer">
+            <p>&copy; Cidya 2024</p>
+        </div>
+    </div>
+</div>
+
+<div class="body-dark-overlay hidden"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -5,6 +5,28 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>PCTO - Scienze Motorie</title>
     <link href="style.css" rel="stylesheet" id="theme-style">
+    <style>
+
+        .intro {
+            display: flex;
+            flex-direction: row;
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .intro img {
+                margin-top: 20px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -21,12 +43,15 @@
         <h1>Kobe Bryant</h1>
         <p>Chi è Kobe Bryant?</p>
 
-        <section class="bio">
-            <h2>Chi è Kobe Bryant?</h2>
-            <p>Kobe Bryant, nato il 23 agosto 1978 a Philadelphia, Pennsylvania, è riconosciuto come una delle più
-                grandi icone del basket. Non solo ha eccelso sul campo, ma è diventato un simbolo di perseveranza,
-                dedizione e determinazione. La sua carriera e il suo impatto vanno ben oltre il basket, rendendolo una
-                figura di ispirazione globale.</p>
+        <section class="intro">
+            <div>
+                <h2>Chi è Kobe Bryant?</h2>
+                <p>Kobe Bryant, nato il 23 agosto 1978 a Philadelphia, Pennsylvania, è riconosciuto come una delle più
+                    grandi icone del basket. Non solo ha eccelso sul campo, ma è diventato un simbolo di perseveranza,
+                    dedizione e determinazione. La sua carriera e il suo impatto vanno ben oltre il basket, rendendolo una
+                    figura di ispirazione globale.</p>
+            </div>
+            <img alt="Federico Faggin" src="draft/material/kobe_bryant_whiteblack.png">
         </section>
 
         <section class="important-dates">
